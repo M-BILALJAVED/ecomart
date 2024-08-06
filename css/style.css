@@ -99,9 +99,7 @@ li {
 /* nav-bar */
 
 /* header  */
-header{
-    padding-bottom: 10px;
-}
+
 .header-wrapper{
     height: 15vh;
     flex-wrap: wrap;
@@ -116,8 +114,12 @@ header{
     font-size: 13px;
     color: #111111;;
 }
+.navlinks ul li:hover{
+    cursor: pointer;
+    color: red;
+}
 
-.head-icons a i {
+.head-icons a {
     margin: 0 15px;
     font-size: 16px;
     color: #111111;
