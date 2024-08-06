@@ -6,7 +6,7 @@
 
 :root {
     --primary-text-color: red;
-    --swiper-pagination-bullet-width: 20px;
+
 }
 
 body {
@@ -52,26 +52,31 @@ li {
 }
 
 /* nav-bar */
-.nav-bar{
+.nav-bar {
     background-color: #181918;
 }
-.nav-bar-wrapper{
+
+.nav-bar-wrapper {
     color: azure;
     height: 19%;
     margin: 0 30px;
     padding: 20px 0;
 }
-.nav-icons{
+
+.nav-icons {
     gap: 40px;
 }
-.nav-emial p{
+
+.nav-emial p {
     cursor: pointer;
 }
-.nav-icons a{
+
+.nav-icons a {
     cursor: pointer;
     color: #fff;
 }
-.nav-drop-down select{
+
+.nav-drop-down select {
     cursor: pointer;
     outline: none;
     background: #181918;
@@ -124,15 +129,17 @@ li {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) ;
+    transform: translate(-50%, -50%);
     display: block;
     width: 80%;
     height: 100%;
     object-fit: cover;
 }
+
 .top-left {
     position: absolute;
     top: 80px;
     left: 80px;
-  }
+}
+
 /* slider */

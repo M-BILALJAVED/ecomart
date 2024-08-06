@@ -1,0 +1,13 @@
+@media screen and (max-width:600px) {
+    .nav-bar-wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .nav-icons {
+        gap: 20px;
+    }
+    .swiper{
+        height: 45vh;
+    }
+}
