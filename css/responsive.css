@@ -31,7 +31,6 @@
         gap: 40px;
     }
 
-
 }
 
 @media screen and (max-width:800px) {
@@ -55,4 +54,5 @@
         justify-content: center;
         gap: 15px;
     }
+
 }

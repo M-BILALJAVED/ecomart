@@ -274,12 +274,20 @@ p {
     text-align: left;
 }
 
-/* .mySwiper2{
-     height: 35vh;
-} */
-.imag {
+
+#tab1 .swiper-slide .imag {
     height: 200px;
     background-color: #f5f5f5;
+}
+
+#tab2 .swiper-slide .imag {
+    height: 200px;
+    background-color: #ff0000;
+}
+
+#tab3 .swiper-slide .imag {
+    height: 200px;
+    background-color: #15ff00;
 }
 
 .swiper-slide p {
@@ -294,8 +302,24 @@ p {
     line-height: 27px;
     font-weight: 400;
 }
-.star-icons{
+
+.star-icons {
     font-size: 12px !important;
     color: #eaac05;
 }
+
 /* section1 */
+
+/* section2 */
+.section2-wrapper {
+    text-align: center;
+}
+
+.mySwiper3 .swiper-slide .imag {
+    height: 200px;
+    background-color: #6a59b4;
+}
+
+.mySwiper3 {
+    margin: 0px 0;
+}
