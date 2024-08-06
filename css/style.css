@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@
 body {
     overflow: hidden;
     font-size: 14px;
+    font-family: "Lato", sans-serif;
 
 }
 
@@ -53,11 +56,12 @@ li {
 
 /* nav-bar */
 .nav-bar {
-    background-color: #181918;
+    background-color: #111111;
+    color: #777777;
+
 }
 
 .nav-bar-wrapper {
-    color: azure;
     height: 19%;
     margin: 0 30px;
     padding: 20px 0;
@@ -71,75 +75,114 @@ li {
     cursor: pointer;
 }
 
+.nav-emial p:hover,
+.nav-icons a:hover,
+.nav-drop-down select:hover {
+    color: white;
+}
+
 .nav-icons a {
+    font-size: 18px;
     cursor: pointer;
-    color: #fff;
+    color: #777777;
 }
 
 .nav-drop-down select {
     cursor: pointer;
     outline: none;
-    background: #181918;
-    color: white;
+    background: #111111;
+    color: #777777;
     border: none;
+    font-size: 14px;
 }
-
 
 /* nav-bar */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* slider */
-
-.swiper {
-    width: 100%;
-    height: 70vh;
+/* header  */
+header{
+    padding-bottom: 10px;
+}
+.header-wrapper{
+    height: 15vh;
+    flex-wrap: wrap;
+}
+.logo img {
+    background: blueviolet;
+    width: 180px;
 }
 
-.swiper-slide {
-    background: #ff0000;
+.navlinks ul {
+    gap: 30px;
+    font-size: 13px;
+    color: #111111;;
 }
 
-.swiper-slide img {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
+.head-icons a i {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #111111;
 }
 
-.top-left {
-    position: absolute;
-    top: 80px;
-    left: 80px;
+.head-icons a:nth-child(1) {
+    visibility: hidden;
 }
 
-/* slider */
+
+
+
+    /* header  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* slider */
+
+    .swiper {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .swiper-slide {
+        background: #ff0000;
+    }
+
+    .swiper-slide img {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+
+    /* slider */
