@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: red;
+    --swiper-pagination-bullet-width: 20px;
+}
+
+body {
+    overflow: hidden;
+    font-size: 14px;
+
+}
+
+/* utility classes */
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    padding: 20px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* nav-bar */
+.nav-bar{
+    background-color: #181918;
+}
+.nav-bar-wrapper{
+    color: azure;
+    height: 19%;
+    margin: 0 30px;
+    padding: 20px 0;
+}
+.nav-icons{
+    gap: 40px;
+}
+.nav-emial p{
+    cursor: pointer;
+}
+.nav-icons a{
+    cursor: pointer;
+    color: #fff;
+}
+.nav-drop-down select{
+    cursor: pointer;
+    outline: none;
+    background: #181918;
+    color: white;
+    border: none;
+}
+
+
+/* nav-bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider */
+
+.swiper {
+    width: 100%;
+    height: 70vh;
+}
+
+.swiper-slide {
+    background: #ff0000;
+}
+
+.swiper-slide img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-left {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+  }
+/* slider */
