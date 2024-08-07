@@ -327,6 +327,7 @@ p {
 
 /* section3 */
 .section3 {
+    margin: 50px 0;
     background-color: #cccccc;
     height: 50vh;
 }

@@ -31,6 +31,18 @@
         gap: 40px;
     }
 
+    .ads-prod h1 {
+        margin-top: 15px;
+    }
+
+    .ads-prod>div span:first-child {
+        font-size: 30px;
+    }
+
+    .ads-prod>div span:last-child {
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width:800px) {
