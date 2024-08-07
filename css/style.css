@@ -73,7 +73,7 @@ h3 {
 }
 
 p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 400;
 }
@@ -382,4 +382,61 @@ p {
     text-transform: uppercase;
     color: #b3b3b4;
 
+}
+
+/* section 4 */
+
+.top-rated,
+.on-sale,
+.trending {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-rated-box1,
+.on-sale-box1,
+.trending-box1 {
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.sec-4-pic {
+    width: 170px;
+    height: 200px;
+    background-color: #f5f5f5;
+}
+
+.section4-text p:first-child {
+    margin-bottom: 10px;
+}
+
+.section4-text-last-p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.section4-text-last-p span {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.section4-text a {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 8px;
+    transition: color .5s ease-in-out;
+}
+
+.section4-text a:hover {
+    color: red;
+    cursor: pointer;
+    border-color: red;
+}
+
+.top-rated-box2,
+.on-sale-box2,
+.trending-box2 {
+    gap: 25px;
 }
