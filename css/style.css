@@ -179,7 +179,7 @@ p {
 .slider-bancground {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     background: red;
     display: flex;
     flex-direction: column;
@@ -295,6 +295,7 @@ p {
     line-height: 20px;
     font-weight: 400;
     margin-top: 15px;
+    text-align: start;
 }
 
 .swiper-slide span {
@@ -322,4 +323,62 @@ p {
 
 .mySwiper3 {
     margin: 20px 0;
+}
+
+/* section3 */
+.section3 {
+    background-color: #cccccc;
+    height: 50vh;
+}
+
+.ads-prod {
+    gap: 20px;
+    flex-direction: column;
+}
+
+.ads-prod h1 {
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.ads-prod>div span:first-child {
+    font-size: 50px;
+    color: #dd443c;
+}
+
+.ads-prod>div span:last-child {
+    font-size: 30px;
+    text-decoration: line-through;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.time-box1,
+.time-box2,
+.time-box3,
+.time-box4 {
+    width: 51px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1px solid #bababa;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.time-box>div p:first-child {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #dd443c;
+    font-weight: 700;
+}
+
+.time-box>div p:last-child {
+    font-size: 12px !important;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #b3b3b4;
+
 }
