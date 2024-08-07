@@ -47,6 +47,10 @@
         font-size: 20px;
     }
 
+    .section5-wrapper {
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width:800px) {
@@ -63,6 +67,18 @@
     .logo img {
         margin-left: 10px;
     }
+
+    .section4-wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .top-rated-box1,
+    .on-sale-box1,
+    .trending-box1 {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width:390px) {
@@ -71,4 +87,10 @@
         gap: 15px;
     }
 
+}
+
+@media screen and (max-width:900px) {
+    .mySwiper {
+        height: 45vh;
+    }
 }
