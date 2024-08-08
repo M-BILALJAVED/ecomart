@@ -235,12 +235,115 @@ p {
 }
 
 .product-tiles a {
-    font-size: 16px;
+    font-size: 16px !important;
     color: #111111;
+    position: relative;
+
+}
+
+.product-tiles a i {
+    animation: myAnim3 2s ease 0s 1 normal forwards;
 }
 
 .product-tiles h3 {
     padding-bottom: 10px;
+}
+
+
+.product-tiles a::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 1px;
+    background-color: #080808;
+    border: 1px solid #69686c;
+    top: 10px;
+    margin-left: -50px;
+    animation: myAnim1 2s ease 0s 1 normal forwards;
+
+}
+
+.product-tiles a::after {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 1px;
+    background-color: #080808;
+    border: 1px solid #69686c;
+    top: 10px;
+    margin-left: 10px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+
+
+}
+
+@keyframes myAnim1 {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes myAnim3 {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
 }
 
 .product-tiles p {
@@ -724,16 +827,16 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 16px;
     color: white;
 }
 
 .footer-last-icons a:hover {
-    background-color: #3765a3 ;
+    background-color: #3765a3;
 }
 
-.down-footer{
+.down-footer {
     padding-top: 40px;
     flex-wrap: wrap;
     gap: 40px;
