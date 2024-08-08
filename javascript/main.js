@@ -96,3 +96,67 @@ var swiper = new Swiper(".mySwiper4", {
     clickable: true,
   },
 });
+
+
+
+// for toogle menu button
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  // Toggle menu visibility when button is clicked
+  menuToggle.addEventListener('click', function (e) {
+    menu.classList.toggle('active');
+    e.stopPropagation(); // Prevent click event from reaching the document
+  });
+
+  // Close the menu if user clicks outside of it
+  document.addEventListener('click', function (e) {
+    if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+      menu.classList.remove('active');
+    }
+  });
+});
+
+
+// for serach bar 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const searchToggle = document.getElementById('search-toggle');
+  const searchContainer = document.getElementById('search-container');
+  const searchBar = document.getElementById('search-bar');
+  const searchButton = document.getElementById('search-button');
+
+  searchContainer.style.display = 'none';
+
+
+  // Toggle the search bar visibility
+  searchToggle.addEventListener('click', function (e) {
+    searchContainer.style.display = searchContainer.style.display === 'block' ? 'none' : 'block';
+    searchBar.focus(); // Focus the search bar when it appears
+    e.stopPropagation(); // Prevent click event from reaching the document
+  });
+
+  // Close the search bar if user clicks outside of it
+  document.addEventListener('click', function (e) {
+    if (!searchContainer.contains(e.target) && !searchToggle.contains(e.target)) {
+      searchContainer.style.display = 'none';
+    }
+  });
+
+  // Handle search functionality
+  searchButton.addEventListener('click', function () {
+    const query = searchBar.value.trim();
+    if (query) {
+      console.log('Search query:', query); // Replace with actual search functionality
+    }
+  });
+
+  // Trigger search on Enter key press
+  searchBar.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      searchButton.click();
+    }
+  });
+});

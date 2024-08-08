@@ -52,7 +52,7 @@
                 <a href="#"><img src="assets/logo.png" alt=""></a>
             </div>
             <div class="navlinks">
-                <ul class="d-flex">
+                <ul id="menu" class="menu d-flex">
                     <li><a href="">HOME</a></li>
                     <li><a href="">MEN</a></li>
                     <li><a href="">WOMEN</a></li>
@@ -62,10 +62,16 @@
                 </ul>
             </div>
             <div class="head-icons ">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <span><a href="#"><i id="menu-toggle" class="fa-solid fa-bars"></i></a></span>
+                <a href="#"><i id="search-toggle" class="fa-solid fa-magnifying-glass"></i></a>
                 <a href=""><i class="fa-solid fa-user"></i></a>
                 <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+            <div class="search-wrapper">
+                <div id="search-container" class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search..." autocomplete="off">
+                    <button id="search-button">Search</button>
+                </div>
             </div>
         </div>
     </header>
@@ -104,7 +110,7 @@
         </div>
     </div>
     <!-- banner -->
-    
+
     <!-- section-1 -->
     <section class="section1">
         <div class="container section1-wrapper d-flex justify-center">

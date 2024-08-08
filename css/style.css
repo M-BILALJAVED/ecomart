@@ -168,6 +168,55 @@ p {
     visibility: hidden;
 }
 
+.menu.active {
+    visibility: visible;
+    /* Show menu when active */
+    max-height: 300px;/
+}
+
+/* search bar */
+.search-container {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 140px;
+    right: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+#search-bar {
+    outline: none;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#search-button:hover {
+    background-color: #555;
+}
+
+/* search bar */
+
+
 /* header  */
 
 /* banner */
