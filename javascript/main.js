@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
   menuToggle.addEventListener('click', function (e) {
     menu.classList.toggle('active');
     e.stopPropagation(); // Prevent click event from reaching the document  
-  searchContainer.style.display = 'none';
+    searchContainer.style.display = 'none';
   });
 
   // Close the menu if user clicks outside of it
