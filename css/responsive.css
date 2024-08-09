@@ -72,7 +72,16 @@
         font-size: 14px;
         padding: 8px;
     }
+
+    .section6-content q {
+        width: 100%;
+    }
+
+    .down-footer {
+        justify-content: center;
+    }
 }
+
 
 @media screen and (max-width:800px) {
 
@@ -171,10 +180,17 @@
     .footer-box-1 {
         width: 220px;
     }
-    
+
     .footer-wrapper {
         gap: 40px;
         justify-content: center !important;
+    }
+
+    .blog-post1,
+    .blog-post2,
+    .blog-post3,
+    .blog-post4 {
+        width: 80%;
     }
 }
 
@@ -184,14 +200,17 @@
 
 
 @media screen and (max-width:768px) {
+
     .mySwiper2,
-    .mySwiper3{
+    .mySwiper3 {
         max-width: 600px;
-    }   
+    }
 }
+
 @media screen and (max-width:600px) {
+
     .mySwiper2,
-    .mySwiper3{
+    .mySwiper3 {
         max-width: 300px;
-    }   
+    }
 }
