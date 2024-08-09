@@ -44,6 +44,10 @@ document.querySelector(".tablinks").click();
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 5,
+  autoplay: {
+    delay: 1800,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -66,6 +70,10 @@ var swiper = new Swiper(".mySwiper2", {
 var swiper = new Swiper(".mySwiper3", {
   slidesPerView: 1,
   spaceBetween: 5,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -88,7 +96,7 @@ var swiper = new Swiper(".mySwiper4", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 1000,
+    delay: 1500,
     disableOnInteraction: false,
   },
   pagination: {
