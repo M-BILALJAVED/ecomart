@@ -104,11 +104,14 @@ var swiper = new Swiper(".mySwiper4", {
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
+  const searchContainer = document.getElementById('search-container');
+
 
   // Toggle menu visibility when button is clicked
   menuToggle.addEventListener('click', function (e) {
     menu.classList.toggle('active');
-    e.stopPropagation(); // Prevent click event from reaching the document
+    e.stopPropagation(); // Prevent click event from reaching the document  
+  searchContainer.style.display = 'none';
   });
 
   // Close the menu if user clicks outside of it
@@ -136,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
     searchContainer.style.display = searchContainer.style.display === 'block' ? 'none' : 'block';
     searchBar.focus(); // Focus the search bar when it appears
     e.stopPropagation(); // Prevent click event from reaching the document
+    menu.classList.remove('active');
   });
 
   // Close the search bar if user clicks outside of it
